@@ -1,0 +1,231 @@
+section {
+    width:1200px;
+    margin:0 auto;
+}
+.step1, .step2, .step3, .step4 {
+    /*box-sizing:border-box;*/
+    text-align:center;
+    padding:0;
+}
+.step1 span, .step2 span, .step3 span, .step4 span {
+    width:18px;
+    height:18px;
+    color:#fff;
+    display:inline-block;
+    background:#f03d37;
+    border-radius:50%;
+    position:relative;
+    top:11px;
+}
+.step1 .bar, .step2 .bar, .step3 .bar, .step4 .bar {
+    height:4px;
+    width:0;
+    border-left:150px solid #f03d37;
+    border-right:150px solid #f03d37;
+}
+.step1 .bar {
+     border-left-color:transparent !important;
+ }
+.step4 .bar {
+    border-right-color:transparent !important;
+}
+.step3 .bar, .step4 .bar {
+    border-left-color:#ffd8d7;
+    border-right-color:#ffd8d7;
+}
+.step3 span, .step4 span {
+    background:#ffd8d7;
+}
+.step3 p, .step4 p {
+    color:#999 !important;
+}
+.step1 p, .step2 p, .step3 p, .step4 p {
+    margin-top:8px;
+    color:#f03d37;
+}
+/*main内容*/
+.main {
+    box-sizing:border-box;
+    width:100%;
+    min-height:10px;
+    border-radius:3px;
+    border:1px solid #e5e5e5;
+    margin-bottom:50px;
+}
+.main .right {
+    width:378px;
+    min-height:20px;
+    background:#f9f9f9;
+    margin-left:820px;
+    box-sizing:border-box;
+    padding:20px;
+}
+.main .left {
+    width:820px;
+    box-sizing: border-box;
+    padding:20px;
+    /*height:20px;*/
+    /*background:pink;*/
+    overflow-x:auto;
+}
+.movie-info .img-box img{
+    width:115px;
+}
+
+/*正文 left 部分*/
+.main .left .seat-example {
+    margin-left:106px;
+}
+.main .left .seat-example li{
+    float:left;
+    margin-right:40px;
+}
+.main .left .seat-example li span {
+    padding-left:12px;
+    font-size:16px;
+}
+.row-id-container {
+    position:absolute;
+    top:97px;
+    color:#999;
+    float:left;
+    width:20px;
+    font-size:16px;
+}
+.row-id-container li {
+    padding:10px 0;
+}
+.seats-container {
+    margin-left:20px;
+}
+.c-screen-line {
+    width:0;
+    border-left:1px dashed #e5e5e5;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    top:87px;
+}
+.screen-container {
+    /*background:pink;*/
+    /*height:600px;*/
+}
+.screen-container .tips{
+    color:#666;
+    font-size:16px;
+    margin:15px 0;
+}
+.screen-container .seats .row{
+    margin:0 0 0 131px;
+    width:500px;
+    padding-bottom:15px;
+}
+.screen-container .seats .row .col-x-1 {
+    /*width:30px;*/
+    height:26px;
+    cursor:pointer;
+    background:url(../images/whiteseat.png) no-repeat center center;
+}
+.screen-container .seats .row .col-x-1.selectedseat {
+    background-image:url(../images/redseat.png);
+}
+.screen-container .seats .row .col-x-1.willselect {
+    background-image:url(../images/selectseat.png);
+}
+/*.screen-container .seats .row [data-no="11"] {*/
+    /*background-image:url(../images/redseat.png);*/
+/*}*/
+/*正文 right部分*/
+.right .movie-info .info{
+    margin-left:130px;
+}
+.right .movie-info .info ul li {
+    margin-bottom:4px;
+}
+.right .movie-info .info ul li span{
+    font-size:12px;
+}
+.right .movie-info .info ul li span:first-child, .movie-details li span:first-child {
+    color:#999;
+}
+.right .movie-info .info ul li span:last-child, .movie-details li span:last-child {
+    color:#151515;
+}
+.movie-details li{
+    padding-bottom:15px;
+}
+.movie-details li:last-child{
+    border-bottom:1px dashed #e5e5e5;
+}
+.seatselect .selected{
+    color:#999;
+}
+.seatselect .tips {
+    text-align:center;
+}
+.seatselect .tips strong{
+    color:#f03d37;
+    font-weight: normal;
+}
+.seatselect .total-price{
+    border-bottom:1px dashed #e5e5e5;
+}
+.seatselect .total-price .title{
+    color:#151515;
+}
+.seatselect .total-price .price {
+    font-size:24px;
+    color:#f03d37;
+}
+.seatselect .total-price .price::before{
+    font-size:14px;
+    content:"￥";
+    display:inline;
+    color:#f03d37;
+}
+.seatselect .ticket {
+    margin-top:12px;
+    margin-right:10px;
+    display: inline-block;
+    position:relative;
+    overflow:hidden;
+}
+.seatselect .ticket p{
+    border:1px solid #f03d37;
+    border-radius:2px;
+    display:inline-block;
+    color:#f03d37;
+    padding:4px 10px;
+    padding-left:12px;
+    font-size:12px;
+
+}
+.seatselect .ticket:after{
+    display: block;
+    content:"";
+    width:10px;
+    height:10px;
+    position:absolute;
+    left:-5px;
+    top:7px;
+    background:transparent;
+    border:1px solid #f03d37;
+    background:#fff;
+    border-radius:50%;
+    
+}
+.ensure-select-btn a {
+    width:260px;
+    height:42px;
+    color:#fff;
+    background: #dedede;
+    border-radius:15px;
+    font-size:16px;
+    line-height:42px;
+    display:inline-block;
+    cursor:not-allowed;
+}
+.ensure-select-btn a.active{
+    background:#f03d37;
+    cursor:pointer;
+}

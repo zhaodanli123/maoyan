@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+<header id="header"></header>
+<div class="header-placeholder"></div>
+<section  class="container clear">
+    <div class="step clear mt30 pb30">
+        <div class="step1 col-x-3">
+            <span>1</span>
+            <div class="bar"></div>
+            <p>选择影片场次</p>
+        </div>
+        <div class="step2 col-x-3">
+            <span>2</span>
+            <div class="bar"></div>
+            <p>选择座位</p>
+        </div>
+        <div class="step3 col-x-3">
+            <span>3</span>
+            <div class="bar"></div>
+            <p>14分钟内付款</p>
+        </div>
+        <div class="step4 col-x-3">
+            <span>4</span>
+            <div class="bar"></div>
+            <p>影院取票观影</p>
+        </div>
+    </div>
+    <div class="count-down">
+        <div class="time-left">
+            <span>请在</span>
+            <span class="minutes"></span>
+            <span>分钟</span>
+            <span class="seconds"></span>
+            <span>秒内完成支付</span>
+        </div>
+        <p class="tips">
+            超时订单会自动取消，如遇支付问题，请致电猫眼客服：1010-5335
+        </p>
+    </div>
+    <div class="warning">请仔细核对场次信息，出票后将<span>无法退票和改签</span></div>
+    <table class="ticket-info">
+        <thead>
+            <tr>
+                <th>影片</th>
+                <th>时间</th>
+                <th>影院</th>
+                <th>座位</th>
+            </tr>
+        </thead>
+        <tbody class="mytbody">
+            <!--<tr>-->
+                <!--<td>《我不是药神》</td>-->
+                <!--<td class="date">今天 7月12日 20:50</td>-->
+                <!--<td>万达影院(京港城店)</td>-->
+                <!--<td><span>3号厅</span><span>5排1座</span><span>5排2座</span></td>-->
+            <!--</tr>-->
+        </tbody>
+    </table>
+    <p class="total-money font14 mt30">实际支付：<span class="price">76</span></p>
+    <p class="pay-btn mt20"><a href="#" class="userpay">确认支付</a></p>
+    <p class="error-msg"></p>
+</section>
+<footer id="footer"></footer>
+<script src="js/lib/querystring.js"></script>
+<script src="js/lib/countdown.js"></script>
+<script src="js/lib/getDate.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/payment.js"></script>
+</body>
+</html>

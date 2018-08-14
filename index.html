@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>猫眼首页</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+	<!-- <iframe src="header.html" class="header" frameborder="0" ></iframe> -->
+	<header id="header"></header>
+	<div class="header-placeholder"></div>
+	<div id="banner" class="relative">
+		<ul class="banner-post">
+			<!--以下部分为动态获取部分-->
+			<!-- <li><a href="#"><img src="images/banner1.jpg" alt=""></a></li> -->
+		</ul>
+		<!-- <a href="#" class="left-arrow"><img src="images/left-arrow.png" alt=""></a>
+		<a href="#" class="right-arrow"><img src="images/right-arrow.png" alt=""></a> -->
+		<a href="#" class="left-arrow"></a>
+		<a href="#" class="right-arrow"></a>
+		<div class="four-btn flex">
+			<a href="#" class="active" data-num="0"></a>
+			<a href="#" data-num="1"></a>
+			<a href="#" data-num="2"></a>
+			<a href="#" data-num="3"></a>
+		</div>
+	</div>
+	<section id="main" class="flex">
+		<div class="part1-left">
+			<!-- <h1 class="title">正在热映(<span>52</span>部)</h1> -->
+			<h1 class="title">正在热映(<span>51</span>部)<a href="movie.html?id=l0" class="rf font14">全部></a></h1>
+			<div class="content flex">
+				<!--<div class="movie-items">-->
+					<!--<div class="movie-info relative">-->
+						<!--<img src="images/post3.jpg" alt="">-->
+						<!--<div class="post-shadow">	-->
+							<!--<span class="movie-name">游侠索罗：星球大战外传</span>-->
+							<!--<span class="movie-score">-->
+								<!--<span class="integer">8.</span>-->
+								<!--<span class="fraction">1</span>-->
+							<!--</span>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<a href="" data-id="" class="buy-btn">购票</a>-->
+				<!--</div>-->
+			</div>
+		</div>
+		<div class="part1-right">
+			<h1 class="title">今日票房</h1>
+			<div class="content">
+				<div class="top-ticket flex">
+					<div class="left-part relative">
+						<img src="images/ticket-one.jpg" alt="">
+						<img src="images/trophy.png" alt="" class="trophy">
+					</div>
+					<div class="right-part flex">
+						<p class="font18">复仇者联盟3：无限战争</p>
+						<p class="font14">733.48万</p>
+					</div>
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<span>2</span>
+							<span>超时空同居</span>
+							<span>750.41万</span>
+						</a>
+					</li>
+				</ul>
+				<div class="today-check flex">
+					<div class="left">今日大盘</div>
+					<div class="right">
+						<p class="msg">
+							<span class="count">2709.2</span>
+							<span>万</span>
+							<a href="javascript:;" class="rf">查看更多》</a>
+						</p>
+						<p class="sub-msg">
+							<span>北京时间10:06:05</span>
+							<span class="rf">猫眼专业版实时票房数据</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="part2-left">
+			<h1 class="title">即将上映(<span>281</span>部)<a href="movie.html?id=l1" class="rf font14">全部 ></a></h1>
+			<div class="content flex">
+				<!--<div class="item-container">
+					<div class="movie-items">
+						<div class="movie-info relative">
+							<img src="images/post2.jpg" alt="">
+							<div class="post-shadow">	
+								<span class="movie-name">完美陌生人</span>
+							</div>
+						</div>
+						<p class="like-count">6957人想看</p>
+						<a href="#" class="preview-video">预告片</a><a href="#" class="prebuy">预售</a>
+					</div>
+					<p class="showtime">5月28日上映</p>
+				</div>-->
+				
+				<div class="item-container">
+					<div class="movie-items">
+						<div class="movie-info relative">
+							<img src="images/post3.jpg" alt="">
+							<div class="post-shadow">	
+								<span class="movie-name">完美陌生人</span>
+							</div>
+						</div>
+						<p class="like-count">6957人想看</p>
+						<a href="#" class="preview-video">预告片</a><a href="#" class="prebuy">预售</a>
+					</div>
+					<p class="showtime">5月28日上映</p>
+				</div>
+				<div class="item-container">
+					<div class="movie-items">
+						<div class="movie-info relative">
+							<img src="images/post1.jpg" alt="">
+							<div class="post-shadow">	
+								<span class="movie-name">完美陌生人</span>
+							</div>
+						</div>
+						<p class="like-count">6957人想看</p>
+						<a href="#" class="preview-video">预告片</a><a href="#" class="prebuy">预售</a>
+					</div>
+					<p class="showtime">5月28日上映</p>
+				</div>
+
+
+
+			</div>
+		</div>
+		<div class="part2-right">
+			<h1 class="title">最受期待<a href="movie.html?id=l1" class="rf font14">查看完整榜单 ></a></h1>
+			<div class="content">
+				<!-- top 1 -->
+				<!--<div class="top-ticket flex">-->
+					<!--<div class="left-part relative">-->
+						<!--<img src="images/top1.jpg" class="top-img" alt="">-->
+						<!--<img src="images/hot.png" alt="" class="trophy">-->
+					<!--</div>-->
+					<!--<div class="right-part flex">-->
+						<!--<p class="font18">侏罗纪世界2</p>-->
+						<!--<p class="font16">上映时间：<strong>2018-06-15</strong></p>-->
+						<!--<p class="font14">354545人想看</p>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="next-top flex">-->
+					<!--&lt;!&ndash; top 2 &ndash;&gt;-->
+					<!--<div class="movie-items relative">-->
+						<!--<div class="img-box">-->
+							<!--<img src="images/top2.jpg" alt="">-->
+						<!--</div>-->
+						<!--<p class="movie-title font18">狄仁杰之四大天王</p>-->
+						<!--<p class="like-count">173390人想看</p>-->
+						<!--<div class="order font16">2</div>-->
+					<!--</div>-->
+					<!--&lt;!&ndash; top 3 &ndash;&gt;-->
+					<!--<div class="movie-items relative">-->
+						<!--<div class="img-box">-->
+							<!--<img src="images/top2.jpg" alt="">-->
+						<!--</div>-->
+						<!--<p class="movie-title font18">狄仁杰之四大天王</p>-->
+						<!--<p class="like-count">173390人想看</p>-->
+						<!--<div class="order font16">3</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<ul>-->
+					<!--<li>-->
+						<!--<a href="#">-->
+							<!--<span>4</span>-->
+							<!--<span>超时空同居</span>-->
+							<!--<span>173390人想看</span>-->
+						<!--</a>-->
+					<!--</li>-->
+				<!--</ul>-->
+
+			</div>
+		</div>
+		<div class="part3-left">
+			<!-- 标题  -->
+			<div class="title flex relative">
+				<h1>热播电影(<span>52</span>部)</h1>
+				<ul>
+					<li><a href="javascript:;">爱情</a></li>
+					<li><a href="javascript:;">喜剧</a></li>
+					<li><a href="javascript:;">动作</a></li>
+					<li><a href="javascript:;">恐怖</a></li>
+					<li><a href="javascript:;">动画</a></li>
+				</ul>
+				<a href="movie.html?id=l2" class="show-all">全部 》</a>
+			</div>
+			<!-- 热播电影  内容 -->
+			<div class="content flex">
+				<!-- 热播电影 1 -->
+				<div class="movie-items hot1">
+					<div class="movie-info relative">
+						<img src="images/posthot1.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- 热播电影 2 -->
+				<div class="movie-items">
+					<div class="movie-info relative">
+						<img src="images/post6.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="movie-items">
+					<div class="movie-info relative">
+						<img src="images/post1.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="movie-items">
+					<div class="movie-info relative">
+						<img src="images/post2.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="movie-items">
+					<div class="movie-info relative">
+						<img src="images/post4.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="movie-items">
+					<div class="movie-info relative">
+						<img src="images/post3.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="movie-items">
+					<div class="movie-info relative">
+						<img src="images/post5.jpg" alt="">
+						<div class="post-shadow" data-mid="1">	
+							<span class="movie-name">完美陌生人</span>
+							<span class="movie-score">
+								<span class="integer">8.</span>
+								<span class="fraction">1</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="part3-right">
+			<h1 class="title">TOP 100<a href="movie.html?id=l2" class="rf font14">查看完整榜单 ></a></h1>
+			<div class="content">
+				<!--<div class="top-ticket flex">-->
+					<!--<div class="left-part img-box2 relative">-->
+						<!--<img src="images/ticket-one.jpg" alt="">-->
+						<!--<img src="images/star.png" alt="" class="trophy">-->
+					<!--</div>-->
+					<!--<div class="right-part flex">-->
+						<!--<p class="font18">复仇者联盟3：无限战争</p>-->
+						<!--<p class="font14">733.48万</p>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<ul>-->
+					<!--<li>-->
+						<!--<a href="#">-->
+							<!--<span>2</span>-->
+							<!--<span>超时空同居</span>-->
+							<!--<span>750.41万</span>-->
+						<!--</a>-->
+					<!--</li>-->
+				<!--</ul>-->
+			</div>
+		</div>
+	</section>
+	<footer id="footer"></footer>
+<script src="js/ajax.js"></script>
+<script src="js/lib/getDate.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/index.js"></script>
+
+
+</body>
+</html>

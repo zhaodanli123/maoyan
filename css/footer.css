@@ -1,0 +1,12 @@
+#footer p {
+  text-align: center;
+  color: #666;
+}
+#footer p a {
+  color: #ef4238;
+  text-decoration: none;
+}
+#footer p a:first-child {
+  color: #ef4238;
+  padding-right:10px;
+}

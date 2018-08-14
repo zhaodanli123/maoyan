@@ -1,0 +1,408 @@
+/*banner部分*/
+/* body::-webkit-scrollbar {
+	color:transparent;
+} */
+#banner {
+  max-width: 1420px;
+  margin:0 auto;
+}
+.banner-post {
+  position: relative;
+  height:440px;
+}
+.banner-post li {
+  opacity:0;
+  right:0;
+  position:absolute;
+  top:0;
+  left:0;
+  overflow:hidden;
+  transition:all 0.5s linear;
+  margin: 0 auto;
+}
+.banner-post li.show {
+  opacity:1;
+  z-index:2;
+}
+.banner-post li a img {
+	height:440px;
+}
+/* .banner-post li:first-child {
+  display: block;
+} */
+.left-arrow, .right-arrow {
+  position: absolute;
+  top:183px;
+  width:56px;
+  height:74px;
+  border: 1px solid rgba(194,194,194,0.4);
+  z-index:10;
+}
+.left-arrow {
+  left: 30px;
+  background:url(../images/left-arrow.png) rgba(194,194,194,0.3) no-repeat center center;
+}
+.right-arrow {
+  right: 30px;
+  background:url(../images/right-arrow.png) rgba(194,194,194,0.3) no-repeat center center;
+}
+/*四个按钮*/
+.four-btn {
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  margin-left: -50px;
+  width:100px;
+  z-index:10;
+  justify-content: space-between;
+}
+.four-btn a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FDFCFD;
+  transition:all 0.5s linear;
+}
+.four-btn a.active {
+  background: #ef4238;
+}
+/*主体部分*/
+#main {
+  width: 1200px;
+  margin:0 auto;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main .part1-left, #main .part2-left, #main .part3-left {
+  width: 732px;
+  margin-bottom:30px;
+} 
+#main .part1-right, #main .part2-right, #main .part3-right {
+  width: 360px;
+  margin-bottom:30px;
+}
+h1.title {
+  font-size: 26px;
+  color: #ef4238;
+  margin:18px 0;
+}
+#main .part1-left .content, #main .part2-left .content  {
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main .content>div.movie-items, #main .content .item-container .movie-items  {
+  margin-bottom:30px;
+  border:1px solid #efefef;
+  cursor: pointer;
+}
+#main .content>div.movie-items:hover, #main .content .item-container .movie-items:hover{
+	box-shadow: 0 1px 15px 2px #F9F1EE;
+}
+.movie-info {
+  width: 160px;
+  height: 220px;
+}
+.movie-info img {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.post-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background: url(../images/shadow.png) repeat-x center bottom;
+}
+.movie-name, .movie-score {
+  position: absolute;
+  bottom:10px;
+}
+.movie-name {
+  left:6%;
+  width:58%;
+  color: #fff;
+  white-space: nowrap;
+  padding:1px 0;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.movie-score {
+  /*width:18%;*/
+  right:6%;
+  text-align: right;
+  color: #ffb400;
+  font-style: italic;
+}
+.movie-score .integer {
+  font-size: 18px;
+}
+.movie-score .fraction {
+  font-size: 14px;
+}
+.buy-btn {
+  width: 100%;
+  display:inline-block;
+  text-align: center;
+  color: #FD4B59;
+  padding:10px 0;
+}
+.buy-btn:hover {
+  color: #fff;
+  background-color: #FD4B59;
+}
+/*今日票房*/
+.top-ticket {
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  cursor:pointer;
+}
+.hot-part-spec, .hot-part-spec .top-img {
+  height:194px;
+}
+.top-ticket img {
+  max-width:none;
+}
+.top-ticket .right-part{
+  /*width: 100%;*/
+  box-sizing: border-box;
+  padding: 10px;
+  overflow:hidden;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-ticket .trophy {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*目前只能在一行中显示影片名，后期优化*/
+.top-ticket .right-part p:first-child{
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.top-ticket .right-part p:last-child{
+  padding-top: 10px;
+  color: #ef4238;
+  font-weight: bold;
+}
+.part1-right ul li a, .part2-right ul li a, .part3-right ul li a {
+  display: inline-block;
+  width:100%;
+  height:36px;
+  line-height:36px;
+}
+.part1-right ul li a:hover, .part2-right ul li a:hover, .part3-right ul li a:hover {
+  background: #f7f7f7;
+}
+.part1-right ul li a span:first-child, .part2-right ul li a span:first-child, .part3-right ul li a span:first-child  {
+  color: #999;
+  font-size: 18px;
+  font-style: italic;
+  display:inline-block;
+  vertical-align:middle;
+  width: 30px;
+}
+.part1-right ul li a span:nth-child(2), .part2-right ul li a span:nth-child(2), .part3-right ul li a span:nth-child(2) {
+  color:#333;
+  font-size: 16px;
+}
+.part1-right ul li a span:last-child, .part2-right ul li a span:last-child, .part3-right ul li a span:last-child {
+  float: right;
+  color: #ef4238;
+  font-size:14px;
+}
+.part1-right ul li:nth-child(1) span:first-child , .part1-right ul li:nth-child(2) span:first-child{
+  color: #ef4238;
+}
+.part3-right ul li:nth-child(1) span:first-child , .part3-right ul li:nth-child(2) span:first-child{
+  color: #ffb400;
+}
+/*今日盘点*/
+.today-check {
+	border: 1px solid #efefef;
+	background: #fdfdfd;
+	margin-top: 15px;
+}
+.today-check .left {
+  padding: 20px 14px;
+  background: #ef4238;
+  color: #fff;
+  writing-mode: vertical-lr;
+  font-size: 17px;
+
+}
+.today-check .right {
+  width: 100%;
+  box-sizing: border-box;
+  padding:0 16px;
+  align-self: center;
+}
+.today-check .right .msg {
+  line-height:30px;
+}
+.today-check .right .msg span.count {
+  font-size: 30px;
+  color: #ef4238;
+}
+.today-check .right .msg a {
+  color: #ef4238;
+}
+.today-check .right .sub-msg {
+  color: #999;
+}
+/*即将上映*/
+#main .part2-left h1.title{
+  color: #2d98f3;
+}
+#main .part2-left h1.title a, #main .part1-left h1.title a {
+  line-height: 35px;
+  margin-right: 10px;
+  color: #2d98f3;
+}
+#main .part1-left h1.title a {
+  color: #ef4238;
+}
+#main .part2-left .movie-name {
+  width:88%;
+}
+.like-count {
+  color: #ffb400;
+}
+#main .part2-left .like-count {
+  padding: 10px 0 10px 15px;
+  background-color: #fbfbfb;
+  color: #ffb400;
+}
+#main .part2-left .movie-info {
+	font-size: 0;
+}
+.preview-video, .prebuy {
+  display: inline-block;
+  width:50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding:10px 0;
+  background: #fff;
+  color: #2d98f3;
+}
+.preview-video {
+  color:#999;
+  border-right: 1px dotted #efefef;
+}
+.prebuy:hover {
+  background: #2d98f3;
+  color: #fff;
+}
+.showtime {
+  text-align: center;
+  margin: 8px 0;
+  color: #999;
+}
+/*最受期待*/
+#main .part2-right h1.title, #main .part3-right h1.title{
+  color: #ffb400;
+}
+#main .part2-right h1.title a, #main .part3-right h1.title a {
+  line-height: 35px;
+  margin-right: 10px;
+  color: #ffb400;
+}
+#main .part2-right .top-ticket .right-part p:nth-child(2) {
+	margin-top: 10px;
+	color: #999;
+}
+#main .part2-right .top-ticket .right-part p:nth-child(3) {
+	color: #ffb400;
+}
+.next-top {
+  justify-content: space-between;
+}
+.next-top .movie-items {
+  border: 1px solid #efefef;
+  cursor: pointer;
+  overflow:hidden;
+}
+.next-top .movie-items:hover {
+  background: #f7f7f7;
+}
+.next-top .movie-items, .next-top .movie-items img {
+  width:170px;
+}
+.next-top .movie-items .img-box {
+  max-height:118px;
+  overflow:hidden;
+}
+.next-top .movie-items .order{
+  width:20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  font-style: italic;
+  top: 0;
+  background: #ffb400;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+}
+.next-top .movie-title, .next-top .like-count{
+  margin: 10px;
+}
+.next-top .movie-title {
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+.part2-right ul{
+  margin-top: 25px;
+}
+.part2-right ul li a span:last-child, .part3-right ul li a span:last-child {
+  color: #ffb400;
+}
+/*热播电影*/
+.part3-left .title {
+	align-items: center;
+}
+.part3-left .title h1 {
+  font-size: 26px;
+  color: #ef4238;
+  margin: 18px 0;
+}
+#main .part3-left .title>a, #main .part2-left .title>a, #main .part2-right .title>a {
+  line-height: 73px;
+}
+.part3-left .title ul li {
+  float: left;
+  margin-left:16px;
+}
+.part3-left .title ul li a {
+  color:#333;
+}
+.part3-left .title .show-all {
+  position: absolute;
+  right: 0;
+  color: #ef4238;
+}
+/*热播电影*/
+.part3-left .content {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.part3-left .content .hot1 .movie-info{
+  width: 350px;
+}
+.img-box2 {
+  width:120px;
+  height:80px;
+  overflow:hidden;
+}
+.img-box2 img:first-child {
+  width:120px;
+}

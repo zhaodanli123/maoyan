@@ -1,0 +1,192 @@
+.hide {
+    display:none;
+}
+.movie-brief-container ul li{
+    font-size:12px;
+}
+.movie-brief-container ul li span{
+    display:inline-block;
+    margin-right:5px;
+    padding:2px 4px;
+    border-radius:3px;
+    border:1px solid #fff;
+}
+#banner {
+    background:url(../images/film-banner.png) no-repeat center center;
+    background-size:100% 100%;
+    margin-bottom:50px;
+}
+.wrapper {
+    width:1200px;
+    margin: 0 auto;
+    height:376px;
+}
+#banner .post-shadow, #banner .wrapper .info{
+    top:70px;
+}
+#banner .post-shadow {
+    width:300px;
+    padding:0 30px;
+    box-sizing:border-box;
+    padding-bottom: 40px;
+    background: url(../images/img-shadow.png) no-repeat bottom;
+    background-size:240px;
+}
+#banner .post-shadow img{
+    border:3px solid #fff;
+    width:100%;
+    box-sizing: border-box;
+}
+#banner>.wrapper>.info{
+    color:#fff;
+    margin-left: 300px;
+    height:306px;
+}
+#banner .hidden-div {
+    display:none;
+}
+.info .movie-brief-container h3, .info .movie-brief-container ul li{
+    margin-bottom: 10px;
+}
+
+/*正文部分*/
+section {
+    width:1200px;
+    margin:0 auto;
+}
+.content-box.notfound, .notfound-details {
+    height:500px;
+    margin-bottom:30px;
+    background:#e5e5e5;
+    text-align:center;
+}
+
+.content-box.notfound img{
+    margin-top:180px;
+}
+section .carousel {
+    background:#ededed;
+    height:280px;
+    position:relative;
+    box-sizing:border-box;
+    /*padding:22px 15px;*/
+}
+.carousel ul {
+    height:100%;
+    width: 3000px;
+    overflow:hidden;
+}
+.carousel ul li {
+    float:left;
+    margin-top:49px;
+    margin-right:40px;
+    /*border:5px solid #f5d8a7;*/
+    transform-origin: 50%;
+    /*transform:scale(0.8);*/
+    border:3px solid transparent;
+    transition:all 0.3s linear;
+}
+.carousel ul li:first-child {
+    margin-left:70px;
+}
+.carousel ul li a {
+    display:inline-block;
+    /*padding:10px 0;*/
+    width:128px;
+
+}
+.carousel ul li:hover{
+    transform:scale(1.2);
+}
+.carousel ul li.selected-poster{
+    transform:scale(1.2);
+    border:3px solid #faaf00;
+}
+.carousel .left-arrow, .carousel .right-arrow {
+    display:inline-block;
+    height:100%;
+    position:absolute;
+    width:30px;
+    top:0;
+    right:5px;
+    background:url(../images/left-arrow-b.png) no-repeat center center;
+}
+.carousel .left-arrow {
+    left:5px;
+    transform:rotate(180deg);
+}
+.movie-info {
+    border-bottom:1px solid #e5e5e5;
+}
+.movie-info .movie-title .title{
+    font-size:26px;
+    display:inline;
+    font-weight:normal;
+    padding-right:20px;
+}
+.movie-info .movie-title span {
+    font-size:24px;
+    color:#faaf00;
+}
+.movie-msg div{
+    display:inline-block;
+    margin-right:30px;
+}
+.movie-msg div span:first-child{
+    color:#999;
+    font-size:14px;
+}
+.movie-msg div span:last-child{
+    color:#151515;
+    font-size:14px;
+}
+.movie-date ul li{
+    float:left;
+    margin-right:20px;
+    padding:3px 10px;
+}
+.movie-date .active{
+    background-color: #f03d37;
+    border-radius:20px;
+}
+.movie-date .active a{
+    color: #fff;
+}
+.movie-details, .notfound-details {
+    margin:30px 0;
+}
+.movie-details thead {
+    background:#f7f7f7;
+}
+.movie-details table {
+    width:100%;
+}
+.notfound-details{
+    height:200px;
+}
+.notfound-details img{
+    margin-top:35px;
+}
+.movie-details table thead tr th, .movie-details table tbody tr td {
+    width:20%;
+    text-align:center;
+    font-size:16px;
+    padding:16px 0;
+}
+.movie-details table tbody tr td {
+    font-size:14px;
+}
+.movie-details .buy-btn {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #f03d37;
+    line-height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    box-shadow:0 2px 10px -2px #f03d37;
+}
+.movie-details .price{
+    color:#f03d37;
+}

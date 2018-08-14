@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/orderdetail.css">
+</head>
+<body>
+<header id="header"></header>
+<div class="header-placeholder"></div>
+<section  class="container clear mt30">
+    <p class="done-info hide">已完成</p>
+    <div class="count-down">
+        <p class="tips">待支付</p>
+        <div class="time-left">
+            <span>请在</span>
+            <span class="minutes"></span>
+            <span>分钟</span>
+            <span class="seconds"></span>
+            <span>秒内完成支付</span>
+        </div>
+        
+    </div>
+    <div class="warning clear">
+       <p class="lf font16">猫眼订单号：<span class="ordernum">22222222222</span></p>
+       <p class="rf relative" style="top:4px;color:#666;">(有订单问题可拨打猫眼客服电话<span>1010-5335</span>,工作时间：900-24:00)</p>
+    </div>
+    <table class="ticket-info">
+        <thead>
+            <tr>
+                <th>影片</th>
+                <th>时间</th>
+                <th>影院</th>
+                <th>座位</th>
+            </tr>
+        </thead>
+        <tbody class="mytbody">
+            <!-- <tr>
+                <td>《我不是药神》</td>
+                <td class="date">今天 7月12日 20:50</td>
+                <td>万达影院(京港城店)</td>
+                <td><span>3号厅</span><span>5排1座</span><span>5排2座</span></td>
+            </tr> -->
+        </tbody>
+    </table>
+    <div class="other-info  clear">
+        <div class="lf mc-info">
+            <h3>博纳国际影城(万寿路店)</h3>
+            <p>地址：复兴路21号凯德精品购物中心4层</p>
+            <p>电话：010-88178880-825</p>
+        </div>
+        <p class="total-money rf font14">总价：<span class="price">76</span></p>
+    </div>
+    <p class="pay-btn mt20"><a href="#" class="userpay">立即支付</a></p>
+    <p class="error-msg"></p>
+</section>
+<footer id="footer"></footer>
+<script src="js/lib/querystring.js"></script>
+<script src="js/lib/countdown.js"></script>
+<script src="js/lib/getDate.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/orderdetail.js"></script>
+</body>
+</html>

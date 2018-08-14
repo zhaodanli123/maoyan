@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<!--<div class="container" style="position:absolute;top:45%;left:45%;">-->
+		<!--<h1>没错,就是404</h1>-->
+	<!--</div>-->
+
+	<a href="index.html" class="logo block"><img src="images/logo.png" alt=""></a>
+	<p class="line"></p>
+	<div class="container">
+		<form method="post" action="data/register.php" enctype="application/x-www-form-urlencoded" class="my-form"  >
+			<div class="login-box">
+				<!--<span class="block">账号登录</span>-->
+				<div class="uname">
+					<i class="icon icon-user inline-block"></i>
+					<input type="text" name="uname" placeholder="用户名" class="uname-input">
+				</div>
+				<p></p>
+			</div>
+			<div class="login-box">
+				<div class="upwd">
+					<i class="icon icon-password inline-block"></i>
+					<input type="password" name="upwd" placeholder="密码" class="pwd-input">
+				</div>
+				<p></p>
+			</div>
+			<div class="login-box">
+					<div class="repwd">
+						<i class="icon icon-password inline-block"></i>
+						<input type="password" placeholder="确认密码" class="repwd-input">
+					</div>
+					<p></p>
+			</div>
+			<div class="login-box">
+				<button class="block submit-btn">同意以下协议并注册</button>
+			</div>
+		</form>
+	</div>
+<script src="js/ajax.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

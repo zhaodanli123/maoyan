@@ -1,0 +1,118 @@
+/*动态css样式*/
+.tabs .active {
+  color:red;
+  border-bottom:1px solid red;
+}
+/*正文部分*/
+section {
+  min-width:1200px;
+  width:1200px;
+  margin:0 auto;
+  clear:both;
+  margin-top:50px;
+}
+section .content {
+  width:730px;
+  min-height:10px;
+  float:left;
+}
+section .aside {
+  width:360px;
+  min-height:10px;
+  float:right;
+}
+section .content .tabs {
+  width:100%;
+  display:inline-block;  /*为什么设置为inline-block就不会溢出了*/
+  margin-bottom:20px;
+  border-bottom:1px solid gray;
+}
+section .content .tabs li {
+  display:inline;
+}
+section .content .tabs li a{
+  position:relative;
+  top:1px;
+  float:left;
+  font-size:18px;
+  padding:6px 0;
+}
+section .content .tabs li+li a {
+  margin-left:30px;
+}
+section .content .title, section .aside .title {
+  font-size:18px;
+  line-height:18px;  /*设置line-height容器高度就与font-size大小一致了*/
+  font-weight:400;
+  display:inline-block;
+}
+section .content .title::before, section .aside .title::before{
+  content:"";
+  width:5px;
+  height:18px;
+  background:red;
+  display:inline-block;
+  vertical-align:bottom;
+  margin-right:10px;
+}
+.intro p {
+  text-indent:10px;
+  line-height:26px;
+  margin:20px 0 40px;
+}
+.title-box a {
+  float:right;
+}
+.actor-intro {
+  margin:10px 0;
+}
+.actor-pic img, .photos img, .rel-movie img{
+  width:100%;
+}
+.actor-pic p{
+  text-align:center;
+}
+.special-img {
+  margin-top:9px;
+}
+
+/*右边栏部分*/
+.information {
+  margin-bottom: 60px;
+}
+.information .infos img{
+  float:left;
+}
+.information .infos .infos-des {
+  padding:5px 0;
+  margin-left:150px;
+  position:absolute;
+  bottom:0;
+  top:0;
+}
+.information .infos .infos-des p:last-child{
+  position:absolute;
+  color:#999;
+  bottom:5px;
+}
+.information .infos .infos-des .view:before {
+  content:url();
+  width:18px;
+  height:14px;
+}
+.information .infos .infos-des .comment-count:before {
+  content:url();
+  width:16px;
+  height:14px;
+}
+.rel-movie p {
+  text-align:center;
+  margin-top:5px;
+}
+.rel-movie .score {
+  color:#ffb400;
+  margin-top:5px;
+}
+.award .row {
+  margin-bottom:15px;
+}

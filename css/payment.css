@@ -1,0 +1,147 @@
+section {
+    width:1200px;
+    margin:0 auto;
+    margin-bottom:80px;
+}
+/*步骤条*/
+.step1, .step2, .step3, .step4 {
+    text-align:center;
+    padding:0;
+}
+.step1 span, .step2 span, .step3 span, .step4 span {
+    width:18px;
+    height:18px;
+    color:#fff;
+    display:inline-block;
+    background:#f03d37;
+    border-radius:50%;
+    position:relative;
+    top:11px;
+}
+.step1 .bar, .step2 .bar, .step3 .bar, .step4 .bar {
+    height:4px;
+    width:0;
+    border-left:150px solid #f03d37;
+    border-right:150px solid #f03d37;
+}
+.step1 .bar {
+    border-left-color:transparent !important;
+}
+.step4 .bar {
+    border-right-color:transparent !important;
+    border-left-color:#ffd8d7;
+    border-right-color:#ffd8d7;
+}
+.step4 span {
+    background:#ffd8d7;
+}
+.step4 p {
+    color:#999 !important;
+}
+.step1 p, .step2 p, .step3 p, .step4 p {
+    margin-top:8px;
+    color:#f03d37;
+}
+/*倒计时*/
+.count-down {
+    height:90px;
+    padding:20px;
+    padding-left:80px;
+    background:url("../images/timeout.png") #fff3f3 no-repeat 30px center;
+
+}
+.count-down .time-left {
+    margin-top:3px;
+    font-size:16px;
+    margin-bottom:5px;
+}
+.count-down .time-left .seconds, .count-down .time-left .minutes{
+    font-size:32px;
+    color:#f03d37;
+}
+.count-down .tips {
+    color:#f03d37;
+}
+
+
+/*警告*/
+section .warning {
+    margin:30px 0 10px 0;
+    font-size:12px;
+}
+section .warning span{
+    color:#faaf00;
+}
+section .warning::before{
+    content:"";
+    background:url(../images/warning.png) no-repeat center center;
+    background-size:12px;
+    width:12px;
+    padding-right:5px;
+    /*vertical-align:middle;*/
+    height:12px;
+    display:inline-block;
+}
+
+/*购票信息*/
+.ticket-info {
+    border:1px solid #e5e5e5;
+    border-radius:3px;
+    width:100%;
+    border-collapse:collapse;
+}
+.ticket-info thead {
+    background:#f7f7f7;
+}
+.ticket-info tr td, .ticket-info tr th {
+    width:20%;
+    font-size:16px;
+    padding:14px 0;
+    font-weight: normal;
+    text-align:center;
+}
+.ticket-info tr td {
+    font-size:14px;
+}
+.ticket-info tr td:first-child {
+    font-size:16px;
+}
+.ticket-info tr td.date {
+    color:#f03d37;
+}
+.total-money .price{
+    font-size:36px;
+    color:#f03d37;
+}
+.total-money .price::before{
+    content:"￥";
+    display:inline-block;
+    font-size:24px;
+    color:#f03d37;
+}
+.total-money, .pay-btn {
+    text-align:right;
+    /*margin-top:20px;*/
+}
+.pay-btn .userpay{
+    display: inline-block;
+    width: 190px;
+    height: 42px;
+    font-size:16px;
+    color: #fff;
+    background:#eee;
+    cursor:not-allowed;
+    line-height: 42px;
+    border-radius: 100px;
+    text-align: center;
+}
+.userpay.active {
+    background-color: #f03d37;
+    box-shadow: 0 2px 10px -2px #f03d37;
+    cursor:pointer;
+}
+.error-msg {
+    text-align:right;
+    color:#f03d37;
+    padding-top:10px;
+}

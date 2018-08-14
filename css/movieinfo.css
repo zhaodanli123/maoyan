@@ -1,0 +1,228 @@
+/*动态css样式*/
+/*.active {*/
+    /*color:red;*/
+    /*border-bottom:1px solid red;*/
+/*}*/
+#banner {
+    margin-bottom: 90px;
+    background:url(../images/film-banner.png) no-repeat center center;
+    background-size:100% 100%;
+}
+.wrapper {
+    width:1200px;
+    margin: 0 auto;
+    height:376px;
+}
+#banner .post-shadow, #banner .wrapper .info{
+    top:70px;
+}
+#banner .post-shadow {
+    width:300px;
+    padding:0 30px;
+    box-sizing:border-box;
+    padding-bottom: 40px;
+    background: url(../images/img-shadow.png) no-repeat bottom;
+    background-size:240px;
+}
+#banner .post-shadow img{
+    border:3px solid #fff;
+    width:100%;
+    box-sizing: border-box;
+}
+#banner>.wrapper>.info{
+    color:#fff;
+    margin-left: 300px;
+    height:306px;
+}
+#banner .hidden-div {
+    display:none;
+}
+.info .movie-brief-container h3, .info .movie-brief-container ul li{
+    margin-bottom: 10px;
+}
+.action-buyBtn {
+    position:absolute;
+    bottom:20px;
+}
+.action-buyBtn a {
+    color:#fff;
+}
+.action-buyBtn .action a {
+    padding:10px 33px;
+    border-radius:3px;
+    background:rgba(255,255,255,0.2);
+}
+.action-buyBtn .action a img {
+    margin-right:4px;
+}
+.action-buyBtn .butBtn {
+    padding:10px 0;
+    background:red;
+    border-radius:3px;
+    text-align:center;
+}
+.movie-status-container {
+    font-size:12px;
+    width:200px;
+    position:absolute;
+    bottom:20px;
+    margin-left: 350px;
+}
+.movie-status-container .score span{
+    color:#ffc600;
+    font-size:30px;
+    display:inline-block;
+}
+/* .movie-status-container .score div {
+    display: inline-blo
+} */
+.sales span{
+    font-size:30px;
+}
+.scoreofstar {
+    width:60px;
+    height:12px;
+    background:url(../images/whiteStar.png);
+}
+.scorebox {
+    padding-top:7px;
+}
+.action-buyBtn .toscore {
+
+}
+/*模态框*/
+/*.comment-form-container:hover{*/
+/*transform:scale(1.05);*/
+/*}*/
+.comment-form-container-box {
+    z-index:100;
+    display:none;
+    position:fixed;
+    /*width:100%;*/
+    /*height:100%;*/
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background:transparent;
+}
+.comment-form-container-box.show {
+    display:block;
+}
+.comment-form-container {
+    transition:all 0.5s linear;
+    position:fixed;
+    width:570px;
+    height:470px;
+    left:50%;
+    top:50%;
+    box-sizing:border-box;
+    margin-left:-285px;
+    margin-top:-235px;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    z-index:200;
+}
+.jBox-container {
+    height:100%;
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+}
+.jBox-container .close {
+    width:88px;
+    height:88px;
+    cursor:pointer;
+    border-radius:50%;
+    background:rgba(0,0,0,0.3);
+    position:absolute;
+    top:-44px;
+    padding-top:36px;
+    padding-left:14px;
+    box-sizing:border-box;
+    /*line-height:88px;*/
+    font-size:32px;
+    color:#fff;
+    right:-44px;
+}
+.jBox-container .title {
+    color:#ffc600;
+    font-size:16px;
+    margin:90px 0 20px 0;
+    text-align:center;
+    font-weight:normal;
+}
+.jBox-container .title>p>span {
+    font-size:30px;
+}
+.jBox-container .specTitle {
+    margin-top:50px;
+}
+.score-star {
+    width:171px;
+    height:30px;
+    margin:0 auto;
+    cursor:pointer;
+}
+.score-star li {
+    float:left;
+    font-size:0;
+}
+.score-star li .half-star {
+    width:15px;
+    height:30px;
+    display:inline-block;
+}
+.score-star li i.left {
+    margin-left:2px;
+    background:url(../images/white-left-half-star.png);
+}
+.score-star li i.right {
+    margin-right:2px;
+    background:url(../images/white-right-half-star.png);
+}
+.score-star .half-star.left.active{
+    background:url(../images/yellow-left-half-star.png);
+}
+.score-star .half-star.right.active{
+    background:url(../images/yellow-right-half-star.png);
+}
+
+/*评分输入框*/
+.content-container {
+    width:90%;
+    margin-left:5%;
+    border:1px solid #d8d8d8;
+    border-radius:4px;
+    height:158px;
+    padding:10px;
+    box-sizing:border-box;
+}
+.content-container textarea {
+    resize:none;
+    font-size:16px;
+    outline:none;
+    border:none;
+    height:100%;
+    width:100%;
+    font-family:"software yahei";
+}
+.jBox-container .btn {
+    text-align:right;
+}
+.jBox-container .btn button {
+    background:rgb(248,212,212);
+    outline:none;
+    cursor:not-allowed;
+    color:#fff;
+    width:90px;
+    height:40px;
+    border-radius:4px;
+    margin-right:5%;
+    margin-top:20px;
+}
+.jBox-container .btn button.active{
+    background:#df2d2d;
+    cursor:pointer;
+}
+

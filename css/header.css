@@ -1,0 +1,144 @@
+.hide {
+	display:none;
+}
+#header {
+  z-index:11;
+}
+#header .container {
+  width: 1200px;
+  height:80px;
+  margin:0 auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+#header .logo {
+  width: 133px;
+  height: 80px;
+  background: url(../images/logo.png) no-repeat left center;
+}
+#header .user-info .caret, #header .city-container .caret, #header .app-download .caret {
+	margin-top: 35px;
+	transform-origin:5px 4px;
+	transition:all 0.1s linear; 
+}
+#header .city-container .caret, #header .app-download .caret{
+  margin-top:36px;
+}
+#header .city-container {
+   width: 80px;
+   align-self:stretch;
+   line-height:80px;
+   cursor:pointer;
+   position:relative;
+   /*text-align:center;*/
+}
+#header .caret {
+  width: 0;
+  height: 0;
+  margin-top:4px;
+  border: 6px solid transparent;
+  border-top-color: #2E2E33; 
+}
+#header .navbar, .navbar li{
+  height: 100%;
+}
+#header .navbar li {
+  float: left;
+  width: 80px;
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+}
+#header .navbar li a {
+	display:block;
+}
+#header .navbar li a.active{
+  color: #fff;
+  background: #ef4238;
+}
+#header .navbar li a.active:hover{
+  color: #fff;
+}
+#header .navbar li a:hover{
+  color: #ef4238;
+}
+#header .app-download {
+	width: 110px;
+  font-size: 16px;
+  position: relative;
+  align-self:stretch;
+  line-height:80px;
+  cursor: pointer;
+}
+#header .app-caret {
+	margin-top:9px;
+}
+/*搜索框*/
+#header .search-btn {
+  outline: none;
+  box-sizing:border-box;
+  width: 260px;
+  height:40px;
+  border: 1px solid #ccc;
+  background-color: #faf8fa;
+  font-size: 14px;
+  border-radius: 20px;
+  padding-left:20px;
+}
+#header .submit-btn, .user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+#header .submit-btn {
+  cursor: pointer;
+  outline:none;
+  background: #ef4238 url(../images/search.png) center center;
+  position: absolute;
+  border:none;
+  top: 0;
+  right: 0;	
+}
+#header .user-info {
+  cursor:pointer;
+  width: 75px;
+  align-self:stretch;
+  /* border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
+  background:#eee; */
+  line-height:81px;
+  padding:0 5px;
+}
+#header .user-info .avator {
+  border: 1px solid #ccc;
+}
+#header .user-info span.open, #header .app-download span.open, #header .city-container span.open {
+	transform: rotate(180deg);
+} 
+#header .user-info ul, #header .city-container ul, #header .app-download ul{
+	background:#faf9f9;
+	position:absolute;
+  border:1px solid #ddd;
+	border-top-style:dotted;
+	top:81px;
+	width:100%;
+	left:-1px;
+}
+#header .app-download ul{
+  padding-top:5px;
+  line-height: normal;
+  padding-bottom:8px;
+}
+#header .user-info ul li, #header .city-container ul li {
+	height:36px;
+	text-align:center;
+	line-height:36px;
+}
+#header .user-info ul li a,  #header .city-container ul li a{
+  color: #666;
+  display:block;
+}
+#header .user-info ul li:not(:last-child), #header .city-container ul li:not(:last-child)  {
+	border-bottom:1px dotted #ddd;
+}

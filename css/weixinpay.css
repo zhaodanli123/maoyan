@@ -1,0 +1,46 @@
+.container {
+    text-align:center;
+    margin-top:20px;
+}
+.myewm {
+    margin:0 auto;
+    margin-top:50px;
+    width:300px;
+    height:300px;
+    border:2px solid #faaf00;
+
+}
+
+.aleadypay, .notpay {
+    margin:0 auto;
+    margin-top:20px;
+    border-radius:2px;
+    padding:5px 18px;
+    font-size:18px;
+    display:block;
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+}
+.tips {
+    background: #ffb7ba;
+    color: #ea675d;
+    display:inline-block;
+    margin-top:20px;
+    border-top:1px solid #f05334;
+    border-bottom:1px solid #f05334;
+    padding:4px 8px;
+    border-radius:4px;
+}
+.aleadypay {
+    background: #237bc3;
+}
+.notpay {
+    background: #e4b100;
+}
+.aleadypay:hover {
+    background:#2d98f3;
+}
+.notpay:hover {
+    background:#ffc600;
+}

@@ -1,0 +1,123 @@
+section {
+    width:1200px;
+    margin:30px auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.main-box {
+    min-height:900px;
+    margin:0 20px;
+    border:1px solid #e1e1e1;
+}
+.main-box .left {
+    width:200px;
+    position:absolute;
+    top:0;
+
+    bottom:0;
+    left:0;
+    border-right:1px solid #e1e1e1;
+    background:#f4f3f4;
+}
+.main-box .left .title {
+    font-size:22px;
+    padding:40px 0 30px 0;
+    text-align:center;
+}
+.main-box .left .navbar-list li a.active {
+    background:#f03d37;
+    color:#fff;
+}
+.main-box .left .navbar-list li a {
+    display:inline-block;
+    text-align:center;
+    height:40px;
+    width:201px;
+    margin-left:-1px;
+    font-size:18px;
+    line-height:40px;
+    color:#333;
+}
+
+/*右侧部分*/
+.main-box .right {
+    margin-left:202px;
+    /*background:pink;*/
+    padding:0 40px;
+}
+.main-box .right .title {
+    font-size:18px;
+    padding:26px 0;
+    color:#ec443f;
+    border-bottom:1px solid #e1e1e1;
+    margin-bottom:30px;
+    font-weight:normal;
+}
+
+/*我的订单*/
+.order-list li {
+    border:1px solid #e5e5e5;
+    margin-bottom:30px;
+}
+.order-list li header{
+    padding:16px 20px;
+    font-size:14px;
+    background:#f7f7f7;
+}
+.order-list li header .date{
+    color:#333;
+    padding-right:20px;
+}
+.order-list li header .no {
+    color:#999;
+}
+.order-list li header .trash {
+    width:15px;
+    height:16px;
+    background:url(../images/trash.png) no-repeat center center;
+    float:right;
+}
+.order-list li .main {
+    padding:20px;
+    width:100%;
+}
+.order-list li .main .poster {
+    width:70px;
+    padding-right:10px;
+}
+.order-list li .main .details {
+    width:56%;
+}
+.order-list li .main .details p{
+    font-size:12px;
+    color:#999;
+    margin-bottom:4px;
+}
+.order-list li .main .details .name {
+    font-size:16px;
+    font-weight:700;
+    color:#333;
+    margin:4px 0 7px -6px;
+}
+.order-list li .main .details .date {
+    color:#f03d37;
+}
+.order-list li .main .pay {
+    width:104px;
+    text-align:center;
+}
+.order-list li .main .pay .pay-btn{
+    width:80px;
+    height:30px;
+    line-height: 30px;
+    color:#fff;
+    margin-bottom:5px;
+    /*text-align:center;*/
+    background:#f03d37;
+    box-shadow:0 2px 10px -2px #f03d37;
+    border-radius:15px;
+}
+.order-list li .main .pay .pay-btn.hide {
+    display:none;
+}

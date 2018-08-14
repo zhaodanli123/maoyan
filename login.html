@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div class="container">
+	<a href="index.html" class="logo block"><img src="images/logo.png" alt=""></a>
+	<img src="images/loginbg.png" alt="" />
+	<form method="post" action="data/login.php" enctype="application/x-www-form-urlencoded" class="rf" >
+	<div class="error-msg">请输入账号和密码</div>
+	<div class="login-box ">
+			<span class="block">账号登录</span>
+			<div class="uname error"><i class="icon icon-user inline-block"></i><input type="text" name="uname" placeholder="用户名"></div>
+			<div class="upwd"><i class="icon icon-password inline-block"></i><input type="password" name="upwd" placeholder="密码"></div>
+			<input type="checkbox">7天内自动登录
+			<button class="block loginbtn">登录</button>
+			<span >还没有账号？<a href="register.html" class="register">免费注册</a></span>	
+		</div>
+	</form>
+</div>
+</body>
+</html>

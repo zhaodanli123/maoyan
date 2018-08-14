@@ -1,0 +1,189 @@
+nav ul {
+   justify-content: center;
+   background:#47464a;
+}
+nav ul li{
+  font-size:16px;
+  width:100px;
+  text-align: center;
+  position: relative;
+}
+nav ul li a{
+  color:#999;
+  padding:20px 0;
+    width:100%;
+  display:inline-block;
+}
+nav ul li.active a{
+  color:#ef4238;
+}
+nav ul .active::after {
+  content: "";
+  display: block;
+  width:0;
+  height:0;
+  border:8px solid transparent;
+  border-bottom:8px solid #fff;
+  position: absolute;
+  left:42px;
+  bottom:0px;
+}
+nav ul li a:hover{
+  color:#fff;
+}
+section {
+  width:1100px;
+  margin:0 auto;
+}
+/*电影分类检索*/
+.movie-channel {
+  padding:0 20px;
+  margin: 20px 0;
+  border:1px solid #e5e5e5;
+}
+/*.movie-channel ul>.channel-item:not(:last-child) {*/
+	/*border-bottom:1px dotted #e5e5e5;*/
+/*}*/
+/*.movie-channel ul>.channel-item>span{*/
+	/*width:60px;*/
+	/*color:#999;*/
+/*}*/
+/*.movie-channel ul>.channel-item>ul {*/
+	/*flex-grow:1;*/
+/*}*/
+/*.movie-channel ul>.channel-item>ul>li{*/
+	/*float: left;*/
+	/*margin: 10px 15px;*/
+/*}*/
+/*.movie-channel ul>.channel-item>ul>li a{*/
+	/*color: #333;*/
+	/*background-color:transparent;*/
+	/*padding:5px 10px;*/
+	/*border-radius:15px;*/
+	/*display: block;*/
+/*}*/
+/*.movie-channel ul>.channel-item>ul>li:not(:first-child) a:hover{*/
+	/*color:#F9546D;*/
+/*}*/
+/*.movie-channel ul>.channel-item>ul>li .active{*/
+	/*color:#fff;*/
+	/*background-color:#F9546D;;*/
+/*}*/
+/*.channel-item {*/
+  /*align-items:center;  */
+/*}*/
+
+.movie-channel ul>.channel-item {
+    padding: 10px 15px;
+}
+.movie-channel ul>.channel-item:not(:last-child) {
+    border-bottom:1px dotted #e5e5e5;
+}
+.movie-channel ul>.channel-item>span{
+    width:60px;
+    float:left;
+    padding-top: 10px;
+    color:#999;
+}
+.movie-channel ul>.channel-item>ul {
+    margin-left: 60px;
+}
+.movie-channel ul>.channel-item>ul:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.movie-channel ul>.channel-item>ul>li{
+    float: left;
+    margin:5px;
+}
+.movie-channel ul>.channel-item>ul>li a{
+    color: #333;
+    background-color:transparent;
+    padding:3px 10px;
+    /*border-radius:12px;*/
+    display: block;
+}
+.movie-channel ul>.channel-item>ul>li a:hover{
+    color:#F9546D;
+}
+.movie-channel ul>.channel-item>ul>li.active{
+    border:0;
+    border-radius:12px;
+    background-color:#F9546D;;
+}
+.movie-channel ul>.channel-item>ul>li.active a{
+    color:#fff;
+}
+.movie-channel ul>.channel-item>ul>li.active a:hover{
+    color:#fff;
+}
+
+/*电影排序*/
+.movies-sorter input {
+	border-color:#F9546D;
+	color:#F9546D;
+}
+.movies-sorter input:not(:first-child) {
+	margin-left: 20px;
+	vertical-align: middle;
+}
+.movies-sorter span { 
+  font-size: 13px;
+}
+/*电影列表*/
+.movies-list {
+    overflow:hidden;
+  /*justify-content: space-between;*/
+  /*flex-wrap: wrap;*/
+}
+.movie-item {
+  margin-top: 30px;
+  width:160px;
+  text-align: center;
+  float:left;
+  margin-left:28px;
+    position:relative;
+    left:-28px;
+}
+.movies-list-box {
+    margin-right:-28px;
+}
+.movie-item a:first-child {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.movie-item img {
+	width: 100%;
+}
+.movie-item p{
+	padding: 8px 0;
+	color: #ffb400;
+	font-size: 16px;
+}
+.movie-title {
+  font-size: 16px;
+}
+/*页码*/
+.movies-pager{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.movies-pager a {
+  padding:8px 12px;
+  border:1px solid #e5e5e5;
+  color:#333;
+  display: inline-block;
+  line-height:14px;
+}
+.movies-pager a.active {
+  background:red;
+  border-color:red;
+  color:#fff;
+}
+
+.movies-pager a.disable {
+  color:#bbb;
+  cursor:not-allowed;
+}

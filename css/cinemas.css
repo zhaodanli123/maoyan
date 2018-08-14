@@ -1,0 +1,118 @@
+section {
+  width:1100px;
+  margin:0 auto;
+}
+/*电影分类检索*/
+.movie-channel {
+  padding:0 20px;
+  margin: 20px 0;
+  border:1px solid #e5e5e5;
+}
+.movie-channel .datelist{
+	display:none;
+}
+.movie-channel ul>.channel-item {
+	padding: 10px 15px;
+}
+.movie-channel ul>.channel-item:not(:last-child) {
+	border-bottom:1px dotted #e5e5e5;
+}
+.movie-channel ul>.channel-item>span{
+	width:60px;
+	float:left;
+	padding-top: 10px;
+	color:#999;
+}
+.movie-channel ul>.channel-item>ul {
+	margin-left: 60px;
+}
+.movie-channel ul>.channel-item>ul:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.movie-channel ul>.channel-item>ul>li{
+	float: left;
+	margin:5px;
+}
+.movie-channel ul>.channel-item>ul>li a{
+	color: #333;
+	background-color:transparent;
+	padding:5px 10px;
+	border-radius:15px;
+	display: block;
+}
+.movie-channel ul>.channel-item>ul>li:not(:first-child) a:hover{
+	color:#F9546D;
+}
+.movie-channel ul>.channel-item>ul>li .active{
+	color:#fff;
+	border:0;
+	background-color:#F9546D;;
+}
+
+/*影院列表*/
+.cinemas-list {
+	margin-top: 40px;
+}
+.cinemas-list>.title {
+	color:#333;
+	font-weight: bold;
+	padding:0 5px;
+	border-left:5px solid red;
+}
+.cinemas-list .cinemas-info {
+	float:left;
+}
+.cinemas-list .buy-btn, .cinemas-list .price{
+  float:right;
+  margin-left:25px;
+}
+.cinemas-list>ul>li {
+	padding: 20px 0;
+	border-bottom:1px dashed #e5e5e5;
+}
+.cinemas-list .buy-btn {
+	color:#fff;
+	padding:9px 12px;
+	background:#f03d37;
+	border-radius: 16px;
+	box-shadow:0 2px 10px -2px #f03d37;
+	margin-top: 4px;
+}
+.cinemas-list .price{
+	color:#999;
+	margin-top:13px;
+}
+.cinemas-list .price>span{
+	color:#f03d37;
+	font-weight: bold;
+}
+.cinemas-list .cinemas-info .address {
+  color: #999;
+}
+.cinemas-list .cinemas-info .title:hover {
+  color:#f03d37;
+}
+/*页码*/
+.movies-pager{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.movies-pager a {
+  padding:8px 12px;
+  border:1px solid #e5e5e5;
+  color:#333;
+  display: inline-block;
+  line-height:14px;
+}
+.movies-pager a.active {
+  background:red;
+	color:#fff;
+	border-color:red;
+}
+.movies-pager a.disable {
+	color:#eee;
+	cursor:not-allowed;
+}

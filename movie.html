@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/movie.css">
+</head>
+<body>
+	<header id="header"></header>
+	<div class="header-placeholder"></div>
+
+	<nav class="mynav">
+		<ul class="flex">
+			<li class="active"><a href="#" id="l0">正在热映</a></li>
+			<li><a href="#" id="l1">即将上映</a></li>
+			<li><a href="#" id="l2">经典影片</a></li>
+		</ul>
+	</nav>
+	<section>
+		<!-- 电影分类检索 -->
+		<div class="movie-channel">
+			<!-- 类型 -->
+			<ul>
+				<li class="channel-item">
+					<span>类型：</span>
+					<ul class="type">
+						<!--<li><a href="#" class="active">全部</a></li>-->
+					</ul>
+				</li>
+				<li class="channel-item">
+					<span>区域：</span>
+					<ul class="area">
+						<!--<li class="active"><a href="#">全部</a></li>-->
+					</ul>
+				</li>
+				<li class="channel-item">
+					<span>年代：</span>
+					<ul class="age">
+						<li class="active" data-pos="0"><a href="#">全部</a></li>
+						<li data-pos="1"><a href="#">2018</a></li>
+						<li data-pos="2"><a href="#">2017</a></li>
+						<li data-pos="3"><a href="#">2016</a></li>
+						<li data-pos="4"><a href="#">2015</a></li>
+						<li data-pos="5"><a href="#">2014</a></li>
+						<li data-pos="6"><a href="#">2013</a></li>
+						<li data-pos="7"><a href="#">2012</a></li>
+						<li data-pos="8"><a href="#">2011</a></li>
+						<li data-pos="9"><a href="#">2010及更早</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 电影列表 -->
+		<div class="movies-panel">
+			<div class="movies-sorter">
+				<input type="radio" name="sort-method" value="hot"><span>按热门排序</span>
+				<input type="radio" name="sort-method" value="hot"><span>按时间排序</span>
+				<input type="radio" name="sort-method" value="hot"><span>按评价排序</span>
+			</div>
+			<div class="movies-list">
+				<div class="movies-list-box clear">
+					<!--<div class="movie-item">-->
+						<!--<a href="#"><img src="images/post6.jpg" alt=""></a>-->
+						<!--<a href="#" class="movie-title">大佛普拉斯</a>-->
+						<!--<p>暂无评分</p>-->
+					<!--</div>-->
+				</div>
+			</div>
+			<div class="movies-pager">
+				<!-- <a href="#">上一页</a>
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">..</a>
+				<a href="#">24</a>
+				<a href="#">下一页</a> -->
+			</div>
+		</div>
+	</section>
+<footer id="footer"></footer>
+<script src="js/lib/querystring.js"></script>
+<script src="js/lib/getDate.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/movie.js"></script>
+</body>
+</html>

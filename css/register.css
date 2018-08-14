@@ -1,0 +1,90 @@
+body {
+    min-width:800px;
+}
+.container {
+    width:800px;
+    margin:0 auto;
+    color:#666;
+}
+.logo {
+    width:1200px;
+    margin:10px auto;
+    display:block;
+}
+.line {
+    height:2px;
+    background: #e02025;
+}
+.login-box {
+    position:relative;
+}
+.icon{
+    width:18px;
+    height:18px;
+    position:absolute;
+    left:5px;
+    top:9px;
+    background:url(../images/sprite.png) no-repeat;
+    background-position:-1250px -617px;
+}
+.icon-password {
+    background-position:-1250px -527px;
+}
+input[type='text'],input[type='password']  {
+    border:none;
+    outline:none;
+    margin-left:28px;
+}
+.uname, .upwd, .repwd {
+    width:270px;
+    position:relative;
+    height:36px;
+    border:1px solid #666;
+    line-height:36px;
+    margin-bottom:27px;
+}
+.login-box span:first-child, .login-box span:last-child, .login-box input[type='checkbox'], .login-box button {
+    margin-bottom:14px;
+}
+.login-box button {
+    color:#fff;
+    width:270px;
+    text-align:center;
+    height:36px;
+    cursor:pointer;
+    background:#e02025;
+}
+.login-box button:active {
+    outline:none;
+}
+.error-msg, .ok-msg, .info-msg {
+    position:absolute;
+    min-width:100px;
+    min-height:19px;
+    left:280px;
+    top:9px;
+}
+.error-msg, .ok-msg{
+    background:url(../images/crying.png) no-repeat center left;
+    background-size:18px;
+    padding-left:20px;
+}
+.error-msg {
+    color:#e02025;
+}
+.info-msg {
+    color:green;
+}
+.ok-msg{
+    background-image:url(../images/happy1.png);
+}
+.my-form {
+    margin-top:60px;
+}
+/* error专用于input输入错误 */
+.error {
+    border-color:#e02025;
+}
+.register {
+    color: #e02025;
+}
